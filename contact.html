@@ -12,7 +12,7 @@
 	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Privacy Policy - GetNewMobileDeals</title>
+	<title>Contact Us - GetNewMobileDeals</title>
 
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,22 +75,10 @@
 			color: #f8fafc;
 		}
 
-		::-webkit-scrollbar {
-			width: 8px;
-		}
-
-		::-webkit-scrollbar-track {
-			background: #020617;
-		}
-
-		::-webkit-scrollbar-thumb {
-			background: #334155;
-			border-radius: 4px;
-		}
-
-		::-webkit-scrollbar-thumb:hover {
-			background: #475569;
-		}
+		::-webkit-scrollbar { width: 8px; }
+		::-webkit-scrollbar-track { background: #020617; }
+		::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+		::-webkit-scrollbar-thumb:hover { background: #475569; }
 
 		.bg-grid {
 			background-size: 40px 40px;
@@ -126,6 +114,12 @@
 			left: 100%;
 			transition: 0.5s ease-in-out;
 		}
+
+		input:focus, textarea:focus {
+			outline: none;
+			border-color: rgba(212, 255, 0, 0.5);
+			box-shadow: 0 0 0 3px rgba(212, 255, 0, 0.1);
+		}
 	</style>
 </head>
 
@@ -138,7 +132,6 @@
 		<header
 			class="nav-island max-w-6xl mx-auto rounded-2xl h-16 md:h-20 flex items-center justify-between px-6 transition-all duration-300">
 
-			<!-- Logo -->
 			<a href="index.html" class="flex items-center gap-2 group">
 				<div
 					class="w-8 h-8 rounded-lg bg-neon flex items-center justify-center text-black font-bold text-xl group-hover:rotate-12 transition-transform">
@@ -152,7 +145,6 @@
 				</div>
 			</a>
 
-			<!-- Desktop Nav -->
 			<nav class="hidden lg:flex items-center bg-white/5 rounded-full px-1 border border-white/5">
 				<a href="index.html"
 					class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">Home</a>
@@ -162,15 +154,12 @@
 					class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">SIM Deals</a>
 			</nav>
 
-			<!-- CTA -->
 			<!-- CTA (hidden on mobile; call moves to sub-bar below) -->
 			<div class="flex items-center gap-4">
 				<a href="tel:+448009989853"
 					class="hidden lg:inline-flex items-center gap-2 btn-shine bg-neon hover:bg-neon-hover text-black font-bold py-2.5 px-5 rounded-xl text-sm transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,255,0,0.3)]">
 					<i class="fa-solid fa-phone mr-2"></i> <span>+44 800 998 9853</span>
 				</a>
-
-				<!-- Mobile Menu Button -->
 				<button id="menu-toggle" class="lg:hidden text-white text-xl focus:outline-none ml-2">
 					<i class="fa-solid fa-bars-staggered"></i>
 				</button>
@@ -185,7 +174,7 @@
 		</div>
 	</div>
 
-	<!-- Mobile Menu Overlay -->
+	<!-- Mobile Menu -->
 	<div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-dark-900/95 backdrop-blur-xl pt-32 px-6">
 		<nav class="flex flex-col space-y-6 text-2xl font-display font-bold text-white">
 			<a href="index.html" class="flex items-center justify-between border-b border-white/10 pb-4">
@@ -217,163 +206,100 @@
 		<div class="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-neon/5 rounded-full blur-[100px] pointer-events-none"></div>
 		<div class="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none z-0"></div>
 
-		<div class="max-w-4xl mx-auto px-6 lg:px-12 relative z-10">
+		<div class="max-w-5xl mx-auto px-6 lg:px-12 relative z-10">
 
 			<!-- Breadcrumb & Title -->
-			<div class="text-center mb-16 lg:mb-20">
+			<div class="text-center mb-12 lg:mb-16">
 				<div class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-slate-900 border border-white/10 shadow-2xl backdrop-blur-md text-xs font-mono text-slate-400">
 					<a href="index.html" class="hover:text-white transition-colors">Home</a>
 					<span class="text-slate-600">/</span>
-					<span class="text-neon font-bold">Privacy Policy</span>
+					<span class="text-neon font-bold">Contact Us</span>
 				</div>
 				<h1 class="text-4xl lg:text-5xl font-display font-bold text-white mb-4 tracking-tight">
-					Privacy <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon to-emerald-400">Policy</span>
+					Contact <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon to-emerald-400">Us</span>
 				</h1>
-				<p class="text-slate-400 text-sm">Last updated for compliance. We recommend a solicitor review for high-traffic use.</p>
+				<p class="text-slate-400 text-lg max-w-2xl mx-auto">
+					Have a question about mobile deals or need help choosing a plan? We're here to help.
+				</p>
 			</div>
 
-			<!-- Policy Sections -->
-			<div class="space-y-8">
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
 
-				<!-- 1. Who We Are -->
-				<section id="who-we-are" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-neon/20 border border-neon/30 flex items-center justify-center text-neon">
-							<i class="fa-solid fa-building"></i>
+				<!-- Left: Info & Phone -->
+				<div class="lg:col-span-1 space-y-6">
+					<div class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-xl">
+						<div class="w-12 h-12 rounded-xl bg-neon/20 border border-neon/30 flex items-center justify-center text-neon mb-4">
+							<i class="fa-solid fa-headset text-xl"></i>
 						</div>
-						<div>
-							<h2 class="text-xl font-display font-bold text-white mb-3">1. Who We Are</h2>
-							<p class="text-slate-400 leading-relaxed">
-								We are an independent mobile comparison and marketing platform operating in the United Kingdom.
-							</p>
-						</div>
+						<h3 class="text-white font-display font-bold text-lg mb-2">Call us</h3>
+						<p class="text-slate-400 text-sm mb-4">Speak to our team for help with mobile plans, SIM-only deals, and comparisons.</p>
+						<a href="tel:+448009989853" class="inline-flex items-center gap-2 text-neon font-bold hover:text-neon-hover transition-colors">
+							<i class="fa-solid fa-phone"></i> +44 800 998 9853
+						</a>
 					</div>
-				</section>
 
-				<!-- 2. Information We Collect -->
-				<section id="information-we-collect" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
-							<i class="fa-solid fa-database"></i>
+					<div class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-xl">
+						<div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 mb-4">
+							<i class="fa-solid fa-circle-info text-xl"></i>
 						</div>
-						<div>
-							<h2 class="text-xl font-display font-bold text-white mb-3">2. Information We Collect</h2>
-							<ul class="text-slate-400 leading-relaxed space-y-2 list-none">
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Name</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Email address</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Phone number (if submitted)</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Device/browser information</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Cookies and tracking data</li>
-							</ul>
-						</div>
+						<h3 class="text-white font-display font-bold text-lg mb-2">About us</h3>
+						<p class="text-slate-400 text-sm leading-relaxed">
+							We are an independent UK mobile comparison platform. We work with top providers to help you find contract phones, SIM-only plans, and the best data deals—all in one place.
+						</p>
 					</div>
-				</section>
+				</div>
 
-				<!-- 3. How We Use Information -->
-				<section id="how-we-use" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
-							<i class="fa-solid fa-gears"></i>
+				<!-- Right: Contact Form -->
+				<div class="lg:col-span-2">
+					<div class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl">
+						<div class="flex items-center gap-3 mb-6">
+							<div class="w-10 h-10 rounded-xl bg-neon/20 border border-neon/30 flex items-center justify-center text-neon">
+								<i class="fa-solid fa-envelope"></i>
+							</div>
+							<h2 class="text-xl font-display font-bold text-white">Send a message</h2>
 						</div>
-						<div>
-							<h2 class="text-xl font-display font-bold text-white mb-3">3. How We Use Information</h2>
-							<ul class="text-slate-400 leading-relaxed space-y-2 list-none">
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> To respond to enquiries</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> To improve website functionality</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> To track performance and analytics</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> To process referrals to partner providers</li>
-							</ul>
-						</div>
-					</div>
-				</section>
 
-				<!-- 4. Affiliate Disclosure -->
-				<section id="affiliate-disclosure" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400">
-							<i class="fa-solid fa-handshake"></i>
-						</div>
-						<div>
-							<h2 class="text-xl font-display font-bold text-white mb-3">4. Affiliate Disclosure</h2>
-							<p class="text-slate-400 leading-relaxed">
-								We may receive compensation from partner providers when users complete qualifying purchases or applications through our website. This compensation does not impact the price you pay.
-							</p>
-						</div>
-					</div>
-				</section>
+						<form action="#" method="post" class="space-y-5">
+							<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+								<div>
+									<label for="name" class="block text-sm font-medium text-slate-300 mb-2">Name</label>
+									<input type="text" id="name" name="name" required
+										class="w-full px-4 py-3 bg-slate-800/80 border border-white/10 rounded-xl text-white placeholder-slate-500 focus:border-neon/50 transition-colors"
+										placeholder="Your name">
+								</div>
+								<div>
+									<label for="email" class="block text-sm font-medium text-slate-300 mb-2">Email</label>
+									<input type="email" id="email" name="email" required
+										class="w-full px-4 py-3 bg-slate-800/80 border border-white/10 rounded-xl text-white placeholder-slate-500 focus:border-neon/50 transition-colors"
+										placeholder="your@email.com">
+								</div>
+							</div>
 
-				<!-- 5. Third-Party Providers -->
-				<section id="third-party" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400">
-							<i class="fa-solid fa-external-link-alt"></i>
-						</div>
-						<div>
-							<h2 class="text-xl font-display font-bold text-white mb-3">5. Third-Party Providers</h2>
-							<p class="text-slate-400 leading-relaxed">
-								When you click on an offer, you may be redirected to a third-party website. We are not responsible for the privacy practices of external websites.
-							</p>
-						</div>
-					</div>
-				</section>
+							<div>
+								<label for="phone" class="block text-sm font-medium text-slate-300 mb-2">Phone <span class="text-slate-500">(optional)</span></label>
+								<input type="tel" id="phone" name="phone"
+									class="w-full px-4 py-3 bg-slate-800/80 border border-white/10 rounded-xl text-white placeholder-slate-500 focus:border-neon/50 transition-colors"
+									placeholder="+44 7xxx xxxxxx">
+							</div>
 
-				<!-- 6. Cookies Policy -->
-				<section id="cookies" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-pink-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400">
-							<i class="fa-solid fa-cookie-bite"></i>
-						</div>
-						<div>
-							<h2 class="text-xl font-display font-bold text-white mb-3">6. Cookies Policy</h2>
-							<p class="text-slate-400 leading-relaxed mb-3">We use cookies for:</p>
-							<ul class="text-slate-400 leading-relaxed space-y-2 list-none mb-3">
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Performance tracking</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Analytics</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Advertising measurement</li>
-							</ul>
-							<p class="text-slate-400 leading-relaxed text-sm">Users may disable cookies through browser settings.</p>
-						</div>
-					</div>
-				</section>
+							<div>
+								<label for="message" class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+								<textarea id="message" name="message" rows="5" required
+									class="w-full px-4 py-3 bg-slate-800/80 border border-white/10 rounded-xl text-white placeholder-slate-500 focus:border-neon/50 transition-colors resize-none"
+									placeholder="How can we help? Tell us about your mobile plan needs..."></textarea>
+							</div>
 
-				<!-- 7. Data Protection -->
-				<section id="data-protection" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-blue-400">
-							<i class="fa-solid fa-shield-halved"></i>
-						</div>
-						<div>
-							<h2 class="text-xl font-display font-bold text-white mb-3">7. Data Protection</h2>
-							<p class="text-slate-400 leading-relaxed">
-								We implement reasonable security measures to protect user data. However, no online transmission is 100% secure.
-							</p>
-						</div>
+							<button type="submit"
+								class="w-full py-4 bg-neon text-black font-bold rounded-xl hover:bg-neon-hover transition-all shadow-[0_0_20px_rgba(212,255,0,0.2)] hover:shadow-[0_0_30px_rgba(212,255,0,0.3)] flex items-center justify-center gap-2 btn-shine">
+								<i class="fa-solid fa-paper-plane"></i> Send message
+							</button>
+						</form>
 					</div>
-				</section>
-
-				<!-- 8. Your Rights -->
-				<section id="your-rights" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-neon/20 border border-neon/30 flex items-center justify-center text-neon">
-							<i class="fa-solid fa-scale-balanced"></i>
-						</div>
-						<div>
-							<h2 class="text-xl font-display font-bold text-white mb-3">8. Your Rights</h2>
-							<p class="text-slate-400 leading-relaxed mb-3">Under UK GDPR, users have the right to:</p>
-							<ul class="text-slate-400 leading-relaxed space-y-2 list-none">
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Access personal data</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Request correction</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Request deletion</li>
-								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Withdraw consent</li>
-							</ul>
-						</div>
-					</div>
-				</section>
+				</div>
 
 			</div>
 
-			<!-- Back to top / Contact -->
-			<div class="mt-16 text-center">
+			<div class="mt-12 text-center">
 				<a href="index.html" class="inline-flex items-center gap-2 text-slate-400 hover:text-neon transition-colors text-sm font-medium">
 					<i class="fa-solid fa-arrow-left"></i> Back to Home
 				</a>
@@ -389,7 +315,6 @@
 		<div class="max-w-7xl mx-auto px-6 lg:px-12">
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 
-				<!-- Branding -->
 				<div class="lg:col-span-1">
 					<a href="index.html" class="flex items-center gap-2 mb-4">
 						<div class="w-6 h-6 rounded bg-neon flex items-center justify-center text-black text-xs font-bold">
@@ -405,7 +330,6 @@
 					</p>
 				</div>
 
-				<!-- Marketplace -->
 				<div>
 					<h3 class="text-white font-display font-bold text-lg mb-6">Marketplace</h3>
 					<ul class="space-y-4 text-sm">
@@ -416,7 +340,6 @@
 					</ul>
 				</div>
 
-				<!-- Company -->
 				<div>
 					<h3 class="text-white font-display font-bold text-lg mb-6">Company</h3>
 					<ul class="space-y-4 text-sm">
@@ -429,7 +352,6 @@
 					</ul>
 				</div>
 
-				<!-- Notice -->
 				<div>
 					<h3 class="text-white font-display font-bold text-lg mb-6">Notice</h3>
 					<div class="text-xs leading-relaxed text-slate-600 bg-slate-900/50 p-4 rounded-xl border border-white/5">
@@ -439,9 +361,7 @@
 				</div>
 			</div>
 
-			<!-- Bottom Bar -->
-			<div
-				class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
+			<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
 				<p>&copy; 2026 GetNewMobileDeals. Engineered for savings.</p>
 			</div>
 		</div>

@@ -155,9 +155,9 @@
 				</div>
 				<div class="flex flex-col">
 					<span class="font-display font-bold text-lg md:text-xl text-white tracking-tight leading-none">
-						GetNew<span class="text-neon">Mobile</span>
+						GetNewMobile<span class="text-neon">Deals</span>
 					</span>
-					<span class="text-[10px] text-slate-400 font-medium tracking-widest uppercase">UK Deal Comparison</span>
+					<span class="text-[10px] text-slate-400 font-medium tracking-widest uppercase">Official Partners with Top UK Mobile Providers</span>
 				</div>
 			</a>
 
@@ -171,12 +171,11 @@
 					class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">SIM Deals</a>
 			</nav>
 
-			<!-- CTA -->
+			<!-- CTA (hidden on mobile; call moves to sub-bar below) -->
 			<div class="flex items-center gap-4">
 				<a href="tel:+448009989853"
-					class="btn-shine bg-neon hover:bg-neon-hover text-black font-bold py-2.5 px-5 rounded-xl text-sm transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,255,0,0.3)]">
-					<i class="fa-solid fa-phone mr-2"></i> <span class="hidden sm:inline">+44 800 998 9853</span><span
-						class="sm:hidden">0800 998 9853</span>
+					class="hidden lg:inline-flex items-center gap-2 btn-shine bg-neon hover:bg-neon-hover text-black font-bold py-2.5 px-5 rounded-xl text-sm transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,255,0,0.3)]">
+					<i class="fa-solid fa-phone mr-2"></i> <span>+44 800 998 9853</span>
 				</a>
 
 				<!-- Mobile Menu Button -->
@@ -185,6 +184,13 @@
 				</button>
 			</div>
 		</header>
+
+		<!-- Mobile-only sub-bar: call CTA under navbar (hidden when menu open) -->
+		<div id="nav-call-subbar" class="lg:hidden mt-2 max-w-6xl mx-auto">
+			<a href="tel:+448009989853" class="flex items-center justify-center gap-2 w-full py-3 px-4 bg-neon hover:bg-neon-hover text-black font-bold rounded-xl text-sm transition-all shadow-[0_0_20px_rgba(212,255,0,0.25)]">
+				<i class="fa-solid fa-phone"></i> +44 800 998 9853
+			</a>
+		</div>
 	</div>
 
 	<!-- Mobile Menu Overlay -->
@@ -210,7 +216,7 @@
 	</div>
 
 	<!-- HERO SECTION -->
-	<section class="relative pt-40 pb-20 lg:pt-52 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
+	<section class="relative pt-44 pb-20 lg:pt-52 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
 
 		<!-- Background Elements -->
 		<div class="absolute inset-0 bg-grid-pattern opacity-20 z-0"></div>
@@ -273,18 +279,18 @@
 				</div>
 
 				<!-- Right Visual -->
-				<div class="w-full lg:w-1/2 relative flex justify-center">
+				<div class="w-full lg:w-1/2 relative flex justify-center min-h-[280px] sm:min-h-0">
 					<!-- Glow behind phone -->
 					<div
-						class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gradient-to-r from-neon to-blue-500 rounded-full blur-[80px] opacity-40 animate-pulse-glow">
+						class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] bg-gradient-to-r from-neon to-blue-500 rounded-full blur-[80px] opacity-40 animate-pulse-glow">
 					</div>
 
-					<!-- Decorative Elements -->
+					<!-- Decorative Elements (hidden on very small to reduce clutter) -->
 					<div
-						class="absolute top-10 right-10 w-20 h-20 border border-slate-700 opacity-30 rounded-full animate-spin-slow">
+						class="absolute top-10 right-10 w-20 h-20 border border-slate-700 opacity-30 rounded-full animate-spin-slow hidden sm:block">
 					</div>
 					<div
-						class="absolute bottom-10 left-10 w-32 h-32 border-2 border-dashed border-slate-700 opacity-30 rounded-full animate-spin-slow"
+						class="absolute bottom-10 left-10 w-32 h-32 border-2 border-dashed border-slate-700 opacity-30 rounded-full animate-spin-slow hidden sm:block"
 						style="animation-direction: reverse;"></div>
 
 					<!-- Floating Badge -->
@@ -304,22 +310,21 @@
 
 					<!-- Main Image -->
 					<div class="relative z-10 animate-float-slow flex justify-center">
-						<!-- Placeholder for the image path provided by user -->
-						<img src="./sammy-sander-man-4144049_1920.jpg" style="width:800px"
-							alt="iPhone 17 Pro Deal" class="w-[280px] drop-shadow-2xl  rounded-full">
+						<img src="./sammy-sander-man-4144049_1920.jpg" alt="iPhone 17 Pro Deal"
+							class="w-[220px] sm:w-[280px] max-w-[85vw] drop-shadow-2xl rounded-full">
 					</div>
 
-					<!-- Floating Badge 2 -->
+					<!-- Floating Badge 2: Network Speed (mobile-adjusted position & size) -->
 					<div
-						class="absolute bottom-20 -right-4 z-20 bg-dark-card/90 backdrop-blur-md border border-white/10 p-4 rounded-2xl shadow-2xl animate-float-fast"
+						class="absolute bottom-4 right-2 sm:bottom-20 sm:-right-4 z-20 bg-dark-card/90 backdrop-blur-md border border-white/10 p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-2xl animate-float-fast"
 						style="animation-delay: 1s;">
-						<div class="flex items-center gap-3">
-							<div class="w-10 h-10 rounded-full bg-neon/20 flex items-center justify-center text-neon">
-								<i class="fa-solid fa-bolt"></i>
+						<div class="flex items-center gap-2 sm:gap-3">
+							<div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-neon/20 flex items-center justify-center text-neon flex-shrink-0">
+								<i class="fa-solid fa-bolt text-sm sm:text-base"></i>
 							</div>
-							<div>
-								<p class="text-xs text-slate-400 uppercase font-bold">Network Speed</p>
-								<p class="text-white font-bold">5G Ultra Ready</p>
+							<div class="min-w-0">
+								<p class="text-[10px] sm:text-xs text-slate-400 uppercase font-bold">Network Speed</p>
+								<p class="text-white font-bold text-sm sm:text-base">5G Ultra Ready</p>
 							</div>
 						</div>
 					</div>
@@ -1261,7 +1266,7 @@
 						</div>
 						<div>
 							<p class="text-white font-bold text-sm">Official Partner</p>
-							<p class="text-xs text-slate-500">Verified ID: #UK-9921</p>
+							<p class="text-xs text-slate-500">Verified: #UK-9921</p>
 						</div>
 					</div>
 				</div>
@@ -1284,10 +1289,10 @@
 							<i class="fa-solid fa-bolt"></i>
 						</div>
 						<span class="text-xl font-display font-bold text-white tracking-tight">
-							GetNew<span class="text-neon">Mobile</span>
+							GetNewMobile<span class="text-neon">Deals</span>
 						</span>
 					</a>
-					<p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-4">Comparison Engine v3.0</p>
+					<p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-4">Official Partners with Top UK Mobile Providers</p>
 					<p class="text-sm leading-relaxed mb-6 text-slate-500">
 						Simplifying the UK telecommunications market through data-driven comparison.
 					</p>
@@ -1343,14 +1348,17 @@
 		const mobileMenu = document.getElementById('mobile-menu');
 		const body = document.body;
 
+		const navCallSubbar = document.getElementById('nav-call-subbar');
 		menuToggle.addEventListener('click', () => {
 			mobileMenu.classList.toggle('hidden');
 			if (mobileMenu.classList.contains('hidden')) {
 				body.style.overflow = 'auto';
 				menuToggle.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
+				if (navCallSubbar) navCallSubbar.classList.remove('hidden');
 			} else {
 				body.style.overflow = 'hidden';
 				menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+				if (navCallSubbar) navCallSubbar.classList.add('hidden');
 			}
 		});
 	</script>

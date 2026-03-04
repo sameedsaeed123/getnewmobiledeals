@@ -157,9 +157,9 @@
 				</div>
 				<div class="flex flex-col">
 					<span class="font-display font-bold text-lg md:text-xl text-white tracking-tight leading-none">
-						GetNew<span class="text-neon">Mobile</span>
+						GetNewMobile<span class="text-neon">Deals</span>
 					</span>
-					<span class="text-[10px] text-slate-400 font-medium tracking-widest uppercase">UK Deal Comparison</span>
+					<span class="text-[10px] text-slate-400 font-medium tracking-widest uppercase">Official Partners with Top UK Mobile Providers</span>
 				</div>
 			</a>
 
@@ -173,12 +173,11 @@
 					class="px-5 py-2 text-sm font-medium text-white bg-white/10 rounded-full shadow-lg transition-all">SIM Deals</a>
 			</nav>
 
-			<!-- CTA -->
+			<!-- CTA (hidden on mobile; call moves to sub-bar below) -->
 			<div class="flex items-center gap-4">
 				<a href="tel:+448009989853"
-					class="btn-shine bg-neon hover:bg-neon-hover text-black font-bold py-2.5 px-5 rounded-xl text-sm transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,255,0,0.3)]">
-					<i class="fa-solid fa-phone mr-2"></i> <span class="hidden sm:inline">+44 800 998 9853</span><span
-						class="sm:hidden">0800 998 9853</span>
+					class="hidden lg:inline-flex items-center gap-2 btn-shine bg-neon hover:bg-neon-hover text-black font-bold py-2.5 px-5 rounded-xl text-sm transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,255,0,0.3)]">
+					<i class="fa-solid fa-phone mr-2"></i> <span>+44 800 998 9853</span>
 				</a>
 
 				<!-- Mobile Menu Button -->
@@ -187,6 +186,13 @@
 				</button>
 			</div>
 		</header>
+
+		<!-- Mobile-only sub-bar: call CTA under navbar (hidden when menu open) -->
+		<div id="nav-call-subbar" class="lg:hidden mt-2 max-w-6xl mx-auto">
+			<a href="tel:+448009989853" class="flex items-center justify-center gap-2 w-full py-3 px-4 bg-neon hover:bg-neon-hover text-black font-bold rounded-xl text-sm transition-all shadow-[0_0_20px_rgba(212,255,0,0.25)]">
+				<i class="fa-solid fa-phone"></i> +44 800 998 9853
+			</a>
+		</div>
 	</div>
 
 	<!-- Mobile Menu Overlay (Active: SIM Deals) -->
@@ -219,7 +225,7 @@
 	<!-- PAGE CONTENT STARTS HERE (Sim.html)        -->
 	<!-- ========================================== -->
 	
-	<main class="pt-32 lg:pt-40 pb-20 min-h-screen bg-[#020617] relative overflow-hidden">
+	<main class="pt-36 lg:pt-40 pb-20 min-h-screen bg-[#020617] relative overflow-hidden">
 		
 		<!-- Ambient Background Glows -->
 		<div class="absolute top-0 left-0 w-[600px] h-[600px] bg-neon/10 rounded-full blur-[120px] pointer-events-none"></div>
@@ -569,10 +575,10 @@
 							<i class="fa-solid fa-bolt"></i>
 						</div>
 						<span class="text-xl font-display font-bold text-white tracking-tight">
-							GetNew<span class="text-neon">Mobile</span>
+							GetNewMobile<span class="text-neon">Deals</span>
 						</span>
 					</a>
-					<p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-4">Comparison Engine v3.0</p>
+					<p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-4">Official Partners with Top UK Mobile Providers</p>
 					<p class="text-sm leading-relaxed mb-6 text-slate-500">
 						Simplifying the UK telecommunications market through data-driven comparison.
 					</p>
@@ -628,14 +634,17 @@
 		const mobileMenu = document.getElementById('mobile-menu');
 		const body = document.body;
 
+		const navCallSubbar = document.getElementById('nav-call-subbar');
 		menuToggle.addEventListener('click', () => {
 			mobileMenu.classList.toggle('hidden');
 			if (mobileMenu.classList.contains('hidden')) {
 				body.style.overflow = 'auto';
 				menuToggle.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
+				if (navCallSubbar) navCallSubbar.classList.remove('hidden');
 			} else {
 				body.style.overflow = 'hidden';
 				menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+				if (navCallSubbar) navCallSubbar.classList.add('hidden');
 			}
 		});
 	</script>
