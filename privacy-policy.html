@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11357239320"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-11357239320');
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Privacy Policy - GetNewMobileDeals</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					fontFamily: {
+						sans: ['Outfit', 'sans-serif'],
+						display: ['Space Grotesk', 'sans-serif'],
+					},
+					colors: {
+						dark: {
+							900: '#020617',
+							800: '#0f172a',
+							card: '#1e293b',
+						},
+						neon: {
+							DEFAULT: '#d4ff00',
+							hover: '#b5d900',
+							glow: 'rgba(212, 255, 0, 0.5)'
+						}
+					},
+					backgroundImage: {
+						'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
+					},
+					animation: {
+						'float-slow': 'float 8s ease-in-out infinite',
+						'float-fast': 'float 5s ease-in-out infinite',
+						'pulse-glow': 'pulse-glow 3s infinite',
+						'spin-slow': 'spin 15s linear infinite',
+					},
+					keyframes: {
+						float: {
+							'0%, 100%': { transform: 'translateY(0)' },
+							'50%': { transform: 'translateY(-20px)' },
+						},
+						'pulse-glow': {
+							'0%, 100%': { boxShadow: '0 0 20px rgba(212, 255, 0, 0.2)' },
+							'50%': { boxShadow: '0 0 40px rgba(212, 255, 0, 0.5)' },
+						}
+					}
+				}
+			}
+		}
+	</script>
+	<style>
+		body {
+			background-color: #020617;
+			color: #f8fafc;
+		}
+
+		::-webkit-scrollbar {
+			width: 8px;
+		}
+
+		::-webkit-scrollbar-track {
+			background: #020617;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: #334155;
+			border-radius: 4px;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background: #475569;
+		}
+
+		.bg-grid {
+			background-size: 40px 40px;
+			mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+			-webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+		}
+
+		.nav-island {
+			background: rgba(15, 23, 42, 0.6);
+			backdrop-filter: blur(16px);
+			-webkit-backdrop-filter: blur(16px);
+			border: 1px solid rgba(255, 255, 255, 0.08);
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+		}
+
+		.btn-shine {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.btn-shine::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+			transition: 0.5s;
+		}
+
+		.btn-shine:hover::after {
+			left: 100%;
+			transition: 0.5s ease-in-out;
+		}
+	</style>
+</head>
+
+<body class="antialiased selection:bg-neon selection:text-black">
+
+	<!-- ========================================== -->
+	<!-- NAVIGATION BAR                             -->
+	<!-- ========================================== -->
+	<div class="fixed top-0 left-0 w-full z-50 px-4 pt-4 md:pt-6">
+		<header
+			class="nav-island max-w-6xl mx-auto rounded-2xl h-16 md:h-20 flex items-center justify-between px-6 transition-all duration-300">
+
+			<!-- Logo -->
+			<a href="index.html" class="flex items-center gap-2 group">
+				<div
+					class="w-8 h-8 rounded-lg bg-neon flex items-center justify-center text-black font-bold text-xl group-hover:rotate-12 transition-transform">
+					<i class="fa-solid fa-bolt"></i>
+				</div>
+				<div class="flex flex-col">
+					<span class="font-display font-bold text-lg md:text-xl text-white tracking-tight leading-none">
+						GetNew<span class="text-neon">Mobile</span>
+					</span>
+					<span class="text-[10px] text-slate-400 font-medium tracking-widest uppercase">UK Deal Comparison</span>
+				</div>
+			</a>
+
+			<!-- Desktop Nav -->
+			<nav class="hidden lg:flex items-center bg-white/5 rounded-full px-1 border border-white/5">
+				<a href="index.html"
+					class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">Home</a>
+				<a href="about.html"
+					class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">About</a>
+				<a href="Sim.html"
+					class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">SIM Deals</a>
+			</nav>
+
+			<!-- CTA -->
+			<div class="flex items-center gap-4">
+				<a href="tel:+448009989853"
+					class="btn-shine bg-neon hover:bg-neon-hover text-black font-bold py-2.5 px-5 rounded-xl text-sm transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,255,0,0.3)]">
+					<i class="fa-solid fa-phone mr-2"></i> <span class="hidden sm:inline">+44 800 998 9853</span><span
+						class="sm:hidden">0800 998 9853</span>
+				</a>
+
+				<!-- Mobile Menu Button -->
+				<button id="menu-toggle" class="lg:hidden text-white text-xl focus:outline-none ml-2">
+					<i class="fa-solid fa-bars-staggered"></i>
+				</button>
+			</div>
+		</header>
+	</div>
+
+	<!-- Mobile Menu Overlay -->
+	<div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-dark-900/95 backdrop-blur-xl pt-32 px-6">
+		<nav class="flex flex-col space-y-6 text-2xl font-display font-bold text-white">
+			<a href="index.html" class="flex items-center justify-between border-b border-white/10 pb-4">
+				Home <i class="fa-solid fa-arrow-right -rotate-45 text-slate-500 text-lg"></i>
+			</a>
+			<a href="about.html" class="flex items-center justify-between border-b border-white/10 pb-4">
+				About <i class="fa-solid fa-arrow-right -rotate-45 text-slate-500 text-lg"></i>
+			</a>
+			<a href="Sim.html" class="flex items-center justify-between border-b border-white/10 pb-4">
+				SIM Only Plans <i class="fa-solid fa-arrow-right -rotate-45 text-slate-500 text-lg"></i>
+			</a>
+		</nav>
+		<div class="mt-8">
+			<p class="text-slate-500 text-sm mb-2">Need help choosing?</p>
+			<a href="tel:+448009989853"
+				class="flex items-center justify-center w-full py-4 bg-white/10 rounded-xl text-white font-bold border border-white/10">
+				<i class="fa-solid fa-headset mr-3 text-neon"></i> Call +44 800 998 9853
+			</a>
+		</div>
+	</div>
+
+	<!-- ========================================== -->
+	<!-- PAGE CONTENT                               -->
+	<!-- ========================================== -->
+	<main class="pt-32 lg:pt-40 pb-20 min-h-screen bg-[#020617] relative overflow-hidden">
+
+		<!-- Background -->
+		<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-900/20 rounded-full blur-[120px] pointer-events-none"></div>
+		<div class="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-neon/5 rounded-full blur-[100px] pointer-events-none"></div>
+		<div class="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none z-0"></div>
+
+		<div class="max-w-4xl mx-auto px-6 lg:px-12 relative z-10">
+
+			<!-- Breadcrumb & Title -->
+			<div class="text-center mb-16 lg:mb-20">
+				<div class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-slate-900 border border-white/10 shadow-2xl backdrop-blur-md text-xs font-mono text-slate-400">
+					<a href="index.html" class="hover:text-white transition-colors">Home</a>
+					<span class="text-slate-600">/</span>
+					<span class="text-neon font-bold">Privacy Policy</span>
+				</div>
+				<h1 class="text-4xl lg:text-5xl font-display font-bold text-white mb-4 tracking-tight">
+					Privacy <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon to-emerald-400">Policy</span>
+				</h1>
+				<p class="text-slate-400 text-sm">Last updated for compliance. We recommend a solicitor review for high-traffic use.</p>
+			</div>
+
+			<!-- Policy Sections -->
+			<div class="space-y-8">
+
+				<!-- 1. Who We Are -->
+				<section id="who-we-are" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-neon/20 border border-neon/30 flex items-center justify-center text-neon">
+							<i class="fa-solid fa-building"></i>
+						</div>
+						<div>
+							<h2 class="text-xl font-display font-bold text-white mb-3">1. Who We Are</h2>
+							<p class="text-slate-400 leading-relaxed">
+								We are an independent mobile comparison and marketing platform operating in the United Kingdom.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 2. Information We Collect -->
+				<section id="information-we-collect" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+							<i class="fa-solid fa-database"></i>
+						</div>
+						<div>
+							<h2 class="text-xl font-display font-bold text-white mb-3">2. Information We Collect</h2>
+							<ul class="text-slate-400 leading-relaxed space-y-2 list-none">
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Name</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Email address</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Phone number (if submitted)</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Device/browser information</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Cookies and tracking data</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- 3. How We Use Information -->
+				<section id="how-we-use" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+							<i class="fa-solid fa-gears"></i>
+						</div>
+						<div>
+							<h2 class="text-xl font-display font-bold text-white mb-3">3. How We Use Information</h2>
+							<ul class="text-slate-400 leading-relaxed space-y-2 list-none">
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> To respond to enquiries</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> To improve website functionality</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> To track performance and analytics</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> To process referrals to partner providers</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- 4. Affiliate Disclosure -->
+				<section id="affiliate-disclosure" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400">
+							<i class="fa-solid fa-handshake"></i>
+						</div>
+						<div>
+							<h2 class="text-xl font-display font-bold text-white mb-3">4. Affiliate Disclosure</h2>
+							<p class="text-slate-400 leading-relaxed">
+								We may receive compensation from partner providers when users complete qualifying purchases or applications through our website. This compensation does not impact the price you pay.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 5. Third-Party Providers -->
+				<section id="third-party" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400">
+							<i class="fa-solid fa-external-link-alt"></i>
+						</div>
+						<div>
+							<h2 class="text-xl font-display font-bold text-white mb-3">5. Third-Party Providers</h2>
+							<p class="text-slate-400 leading-relaxed">
+								When you click on an offer, you may be redirected to a third-party website. We are not responsible for the privacy practices of external websites.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 6. Cookies Policy -->
+				<section id="cookies" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-pink-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400">
+							<i class="fa-solid fa-cookie-bite"></i>
+						</div>
+						<div>
+							<h2 class="text-xl font-display font-bold text-white mb-3">6. Cookies Policy</h2>
+							<p class="text-slate-400 leading-relaxed mb-3">We use cookies for:</p>
+							<ul class="text-slate-400 leading-relaxed space-y-2 list-none mb-3">
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Performance tracking</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Analytics</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Advertising measurement</li>
+							</ul>
+							<p class="text-slate-400 leading-relaxed text-sm">Users may disable cookies through browser settings.</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 7. Data Protection -->
+				<section id="data-protection" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-blue-400">
+							<i class="fa-solid fa-shield-halved"></i>
+						</div>
+						<div>
+							<h2 class="text-xl font-display font-bold text-white mb-3">7. Data Protection</h2>
+							<p class="text-slate-400 leading-relaxed">
+								We implement reasonable security measures to protect user data. However, no online transmission is 100% secure.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- 8. Your Rights -->
+				<section id="your-rights" class="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 shadow-xl hover:border-white/15 transition-colors">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-10 h-10 rounded-xl bg-neon/20 border border-neon/30 flex items-center justify-center text-neon">
+							<i class="fa-solid fa-scale-balanced"></i>
+						</div>
+						<div>
+							<h2 class="text-xl font-display font-bold text-white mb-3">8. Your Rights</h2>
+							<p class="text-slate-400 leading-relaxed mb-3">Under UK GDPR, users have the right to:</p>
+							<ul class="text-slate-400 leading-relaxed space-y-2 list-none">
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Access personal data</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Request correction</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Request deletion</li>
+								<li class="flex items-center gap-2"><i class="fa-solid fa-minus text-neon text-xs"></i> Withdraw consent</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+			<!-- Back to top / Contact -->
+			<div class="mt-16 text-center">
+				<a href="index.html" class="inline-flex items-center gap-2 text-slate-400 hover:text-neon transition-colors text-sm font-medium">
+					<i class="fa-solid fa-arrow-left"></i> Back to Home
+				</a>
+			</div>
+
+		</div>
+	</main>
+
+	<!-- ========================================== -->
+	<!-- FOOTER                                     -->
+	<!-- ========================================== -->
+	<footer class="bg-black pt-20 pb-8 text-slate-400 border-t border-white/10">
+		<div class="max-w-7xl mx-auto px-6 lg:px-12">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+				<!-- Branding -->
+				<div class="lg:col-span-1">
+					<a href="index.html" class="flex items-center gap-2 mb-4">
+						<div class="w-6 h-6 rounded bg-neon flex items-center justify-center text-black text-xs font-bold">
+							<i class="fa-solid fa-bolt"></i>
+						</div>
+						<span class="text-xl font-display font-bold text-white tracking-tight">
+							GetNew<span class="text-neon">Mobile</span>
+						</span>
+					</a>
+					<p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-4">Comparison Engine v3.0</p>
+					<p class="text-sm leading-relaxed mb-6 text-slate-500">
+						Simplifying the UK telecommunications market through data-driven comparison.
+					</p>
+				</div>
+
+				<!-- Marketplace -->
+				<div>
+					<h3 class="text-white font-display font-bold text-lg mb-6">Marketplace</h3>
+					<ul class="space-y-4 text-sm">
+						<li><a href="Sim.html" class="hover:text-neon transition-colors flex items-center gap-2"><i
+									class="fa-solid fa-chevron-right text-[10px] text-slate-600"></i> SIM Only</a></li>
+						<li><a href="index.html" class="hover:text-neon transition-colors flex items-center gap-2"><i
+									class="fa-solid fa-chevron-right text-[10px] text-slate-600"></i> Home</a></li>
+					</ul>
+				</div>
+
+				<!-- Company -->
+				<div>
+					<h3 class="text-white font-display font-bold text-lg mb-6">Company</h3>
+					<ul class="space-y-4 text-sm">
+						<li><a href="about.html" class="hover:text-neon transition-colors flex items-center gap-2"><i
+									class="fa-solid fa-chevron-right text-[10px] text-slate-600"></i> About Us</a></li>
+						<li><a href="contact.html" class="hover:text-neon transition-colors flex items-center gap-2"><i
+									class="fa-solid fa-chevron-right text-[10px] text-slate-600"></i> Contact</a></li>
+						<li><a href="privacy-policy.html" class="hover:text-neon transition-colors flex items-center gap-2"><i
+									class="fa-solid fa-chevron-right text-[10px] text-slate-600"></i> Privacy Policy</a></li>
+					</ul>
+				</div>
+
+				<!-- Notice -->
+				<div>
+					<h3 class="text-white font-display font-bold text-lg mb-6">Notice</h3>
+					<div class="text-xs leading-relaxed text-slate-600 bg-slate-900/50 p-4 rounded-xl border border-white/5">
+						We are officially partners with top mobile providers in UK. All trademarks and brand names are the
+						property of their respective owners.
+					</div>
+				</div>
+			</div>
+
+			<!-- Bottom Bar -->
+			<div
+				class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
+				<p>&copy; 2026 GetNewMobileDeals. Engineered for savings.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		const menuToggle = document.getElementById('menu-toggle');
+		const mobileMenu = document.getElementById('mobile-menu');
+		const body = document.body;
+
+		menuToggle.addEventListener('click', () => {
+			mobileMenu.classList.toggle('hidden');
+			if (mobileMenu.classList.contains('hidden')) {
+				body.style.overflow = 'auto';
+				menuToggle.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
+			} else {
+				body.style.overflow = 'hidden';
+				menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+			}
+		});
+	</script>
+</body>
+
+</html>
