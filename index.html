@@ -278,14 +278,14 @@
 					</div>
 				</div>
 
-				<!-- Right Visual -->
-				<div class="w-full lg:w-1/2 relative flex justify-center min-h-[280px] sm:min-h-0">
+				<!-- Right Visual: compact on mobile, elongated on desktop -->
+				<div class="w-full lg:w-1/2 relative flex justify-center min-h-[260px] lg:min-h-[420px]">
 					<!-- Glow behind phone -->
 					<div
-						class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] bg-gradient-to-r from-neon to-blue-500 rounded-full blur-[80px] opacity-40 animate-pulse-glow">
+						class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] lg:w-[380px] lg:h-[380px] bg-gradient-to-r from-neon to-blue-500 rounded-full blur-[80px] opacity-40 animate-pulse-glow">
 					</div>
 
-					<!-- Decorative Elements (hidden on very small to reduce clutter) -->
+					<!-- Decorative Elements -->
 					<div
 						class="absolute top-10 right-10 w-20 h-20 border border-slate-700 opacity-30 rounded-full animate-spin-slow hidden sm:block">
 					</div>
@@ -293,7 +293,7 @@
 						class="absolute bottom-10 left-10 w-32 h-32 border-2 border-dashed border-slate-700 opacity-30 rounded-full animate-spin-slow hidden sm:block"
 						style="animation-direction: reverse;"></div>
 
-					<!-- Floating Badge -->
+					<!-- Floating Badge: Data Saving -->
 					<div
 						class="absolute top-20 -left-4 z-20 bg-dark-card/90 backdrop-blur-md border border-white/10 p-4 rounded-2xl shadow-2xl animate-float-fast hidden sm:block">
 						<div class="flex items-center gap-3">
@@ -308,23 +308,23 @@
 						</div>
 					</div>
 
-					<!-- Main Image -->
-					<div class="relative z-10 animate-float-slow flex justify-center">
+					<!-- Main Image: smaller on mobile, large/elongated on desktop -->
+					<div class="relative z-10 animate-float-slow flex justify-center items-center">
 						<img src="./sammy-sander-man-4144049_1920.jpg" alt="iPhone 17 Pro Deal"
-							class="w-[220px] sm:w-[280px] max-w-[85vw] drop-shadow-2xl rounded-full">
+							class="w-[220px] max-w-[85vw] sm:w-[280px] lg:w-[380px] xl:w-[420px] drop-shadow-2xl rounded-full">
 					</div>
 
-					<!-- Floating Badge 2: Network Speed (mobile-adjusted position & size) -->
+					<!-- Floating Badge 2: Network Speed (mobile: tucked in; desktop: original position) -->
 					<div
-						class="absolute bottom-4 right-2 sm:bottom-20 sm:-right-4 z-20 bg-dark-card/90 backdrop-blur-md border border-white/10 p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-2xl animate-float-fast"
+						class="absolute bottom-4 right-2 lg:bottom-20 lg:-right-4 z-20 bg-dark-card/90 backdrop-blur-md border border-white/10 p-3 lg:p-4 rounded-xl lg:rounded-2xl shadow-2xl animate-float-fast"
 						style="animation-delay: 1s;">
-						<div class="flex items-center gap-2 sm:gap-3">
-							<div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-neon/20 flex items-center justify-center text-neon flex-shrink-0">
-								<i class="fa-solid fa-bolt text-sm sm:text-base"></i>
+						<div class="flex items-center gap-2 lg:gap-3">
+							<div class="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-neon/20 flex items-center justify-center text-neon flex-shrink-0">
+								<i class="fa-solid fa-bolt text-sm lg:text-base"></i>
 							</div>
 							<div class="min-w-0">
-								<p class="text-[10px] sm:text-xs text-slate-400 uppercase font-bold">Network Speed</p>
-								<p class="text-white font-bold text-sm sm:text-base">5G Ultra Ready</p>
+								<p class="text-[10px] lg:text-xs text-slate-400 uppercase font-bold">Network Speed</p>
+								<p class="text-white font-bold text-sm lg:text-base">5G Ultra Ready</p>
 							</div>
 						</div>
 					</div>
