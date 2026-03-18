@@ -152,13 +152,23 @@
 			</a>
 
 			<!-- Desktop Nav -->
-			<nav class="hidden lg:flex items-center bg-white/5 rounded-full px-1 border border-white/5">
+			<nav class="hidden lg:flex items-center bg-white/5 rounded-full px-1 border border-white/5 gap-0">
 				<a href="index.html"
 					class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">Home</a>
 				<a href="about.html"
 					class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">About</a>
 				<a href="Sim.html"
 					class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">SIM Deals</a>
+				<div class="relative group">
+					<button type="button" class="px-5 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors flex items-center gap-1 rounded-full focus:outline-none">
+						Providers <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
+					</button>
+					<div class="absolute top-full left-0 mt-1 py-2 min-w-[180px] bg-slate-900 border border-white/10 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+						<a href="ee.html" class="block px-4 py-2.5 text-sm text-slate-300 hover:bg-white/10 hover:text-neon transition-colors rounded-lg mx-1">
+							EE | Authorised Retailer
+						</a>
+					</div>
+				</div>
 			</nav>
 
 			<!-- CTA -->
@@ -195,6 +205,10 @@
 			</a>
 			<a href="Sim.html" class="flex items-center justify-between border-b border-white/10 pb-4">
 				SIM Only Plans <i class="fa-solid fa-arrow-right -rotate-45 text-slate-500 text-lg"></i>
+			</a>
+			<p class="text-slate-500 text-sm font-normal pt-2 pb-1">Providers</p>
+			<a href="ee.html" class="flex items-center justify-between border-b border-white/10 pb-4 text-lg">
+				EE | Authorised Retailer <i class="fa-solid fa-arrow-right -rotate-45 text-slate-500 text-lg"></i>
 			</a>
 		</nav>
 		<div class="mt-8">
